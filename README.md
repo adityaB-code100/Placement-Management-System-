@@ -119,7 +119,7 @@ Cloud Project/
 
 ### Backend `.env` (`backend/.env`)
 ```env
-MONGO_URI=mongodb+srv://hyperlocalaqi_db_user:Test1234@aqiproject.7r8nvxf.mongodb.net/placement_db?retryWrites=true&w=majority
+MONGO_URI=
 JWT_SECRET=super_secret_placement_jwt_key_2026_xyz_789
 PORT=5000
 FRONTEND_URL=http://localhost:5173
@@ -202,5 +202,4 @@ The React web app will start at `http://localhost:5173`.
 * Protected endpoints enforce role authorization middleware (`@jwt_required`, `@role_required`).
 * Strict CORS configuration ensuring frontend and backend communicate securely.
 * MongoDB connection strings and JWT secrets are managed strictly through environment variables.
-#   P l a c e m e n t - M a n a g e m e n t - S y s t e m -  
- 
+#
