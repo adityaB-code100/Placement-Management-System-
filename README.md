@@ -1,72 +1,130 @@
-# 🎓 Cloud-Based Placement Management and Recruitment System
+<div align="center">
 
-A complete, production-ready, full-stack campus placement application built for colleges and universities. It streamlines the recruitment ecosystem by connecting **Students**, **Placement Officers (Admins)**, and **Corporate Recruiters**.
+# 🎓 Cloud-Based Placement Management & Recruitment System
+
+**A full-stack campus placement platform connecting Students, Placement Officers, and Corporate Recruiters.**
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_App-2ea44f?style=for-the-badge)](https://frontend-opal-tau-kjcer8fkaw.vercel.app/)
+
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Python_3.12-000000?style=flat-square&logo=flask&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-FB015B?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=flat-square&logo=render&logoColor=black)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+[Features](#-key-features) •
+[Tech Stack](#️-technology-stack) •
+[Demo Login](#-demo-credentials) •
+[Setup](#-local-development-setup) •
+[Deployment](#-deployment) •
+[Security](#-security)
+
+</div>
 
 ---
-## Live URL :  https://frontend-opal-tau-kjcer8fkaw.vercel.app/
+
+## 📖 Overview
+
+Campus placements involve a lot of back-and-forth between students, the placement cell, and recruiters. This system puts the whole recruitment lifecycle in one place: **profile building → eligibility checking → application → interview scheduling → selection**, with real-time analytics for placement officers.
+
+| 👨‍🎓 Students | 🛡️ Placement Officers | 🏢 Recruiters |
+| :--- | :--- | :--- |
+| Build profiles, find eligible drives, apply in one click, and track progress | Approve companies, create drives, manage pipelines, and view analytics | Post openings, review eligible applicants, and schedule interviews |
+
+---
 
 ## 🌟 Key Features
 
-### 👨‍🎓 Student Role
-* **Authentication**: Register, login, and secure JWT persistent session.
-* **Detailed Profile Management**: Edit Personal Info, Academic Info (10th/12th/Diploma %, CGPA, Active & Total backlogs), Skills, Projects, Certifications, and Resume URL.
-* **Live Profile Completeness**: Real-time completeness gauge calculator (0-100%).
-* **Placement Drives Catalog**: Search & filter placement opportunities by role, company, location, CTC, and branch.
-* **Automatic Eligibility Checker**: Instant real-time evaluation comparing student CGPA, backlogs, branch, and 10th/12th scores against job requirements with detailed failure breakdown.
-* **One-Click Applications**: Submit applications to eligible drives.
-* **Visual Progress Stepper**: Track recruitment pipeline stage (`Applied` ➔ `Shortlisted` ➔ `Assessment` ➔ `Technical Interview` ➔ `HR Interview` ➔ `Selected`).
-* **Interview Schedule**: View scheduled assessment/interview slots with date, time, and Google Meet video link.
-* **In-App Notifications**: Real-time notification drawer with unread count badge.
+<details open>
+<summary><b>👨‍🎓 Student</b></summary>
 
-### 🛡️ Placement Officer / Admin Role
-* **Analytics Dashboard**: Real-time metrics for total students, registered accounts, approved companies, active drives, total placed, placement %, and CTC averages.
-* **Interactive Recharts Analytics**:
-  1. Branch-wise placement distribution (Bar Chart)
-  2. Top company selections (Horizontal Bar Chart)
-  3. Monthly application trends (Area Chart)
-  4. Recruitment pipeline stage breakdown (Pie Chart)
-  5. Salary package distribution (Range Chart)
-* **Company Approvals**: Review recruiter registrations and approve/reject company accounts before they can post drives.
-* **Placement Drive Creator**: Modal builder for job openings with mandatory eligibility thresholds.
-* **Student Directory**: Searchable student table with CGPA and backlog metrics.
-* **Global Pipeline Manager**: Update candidate status stages across all drives.
+- 🔐 **Authentication**: Register, log in, and stay signed in with secure JWT sessions
+- 📝 **Detailed Profile**: Personal info, academics (10th / 12th / Diploma %, CGPA, active & total backlogs), skills, projects, certifications, and resume URL
+- 📊 **Live Profile Completeness**: Real-time 0–100% gauge
+- 🔎 **Drive Catalog**: Search and filter by role, company, location, CTC, and branch
+- ✅ **Automatic Eligibility Checker**: Compares CGPA, backlogs, branch, and 10th/12th scores against drive requirements, with a detailed breakdown of any failures
+- 🖱️ **One-Click Apply** to eligible drives
+- 🚦 **Visual Progress Stepper**: `Applied` ➔ `Shortlisted` ➔ `Assessment` ➔ `Technical Interview` ➔ `HR Interview` ➔ `Selected`
+- 📅 **Interview Schedule**: Date, time, and Google Meet link for every round
+- 🔔 **In-App Notifications**: Drawer with unread-count badge
 
-### 🏢 Recruiter / Corporate Role
-* **Company Account Registration**: Register company profile (pending admin approval).
-* **Opportunity Posting**: Create drive postings with role description, CTC, and eligibility criteria.
-* **Applicant Evaluation**: Filter eligible applicants for company drives, view resume links, and update recruitment stages.
-* **Interview Scheduler**: Schedule assessment and interview rounds (date, time, meeting link, candidate instructions) with automated student notifications.
+</details>
+
+<details open>
+<summary><b>🛡️ Placement Officer / Admin</b></summary>
+
+- 📈 **Analytics Dashboard**: Total students, registered accounts, approved companies, active drives, total placed, placement %, and CTC averages
+- 📊 **Interactive Recharts Visualizations**
+  1. Branch-wise placement distribution *(Bar)*
+  2. Top company selections *(Horizontal Bar)*
+  3. Monthly application trends *(Area)*
+  4. Recruitment pipeline breakdown *(Pie)*
+  5. Salary package distribution *(Range)*
+- 🏢 **Company Approvals**: Approve or reject recruiter registrations before they can post drives
+- 🧱 **Drive Creator**: Modal builder with mandatory eligibility thresholds
+- 🎓 **Student Directory**: Searchable table with CGPA and backlog metrics
+- 🔄 **Global Pipeline Manager**: Update candidate stages across all drives
+
+</details>
+
+<details open>
+<summary><b>🏢 Recruiter / Corporate</b></summary>
+
+- 🏷️ **Company Registration**: Create a company profile (pending admin approval)
+- 📢 **Opportunity Posting**: Role description, CTC, and eligibility criteria
+- 🧑‍💼 **Applicant Evaluation**: Filter eligible applicants, open resumes, and move candidates through stages
+- 🗓️ **Interview Scheduler**: Set date, time, meeting link, and instructions, with automatic student notifications
+
+</details>
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    A[👨‍🎓 Student] --> F
+    B[🛡️ Admin] --> F
+    C[🏢 Recruiter] --> F
+    F["⚛️ React + Vite<br/>(Vercel)"] -- "REST / JWT" --> API["🐍 Flask API<br/>(Render + Gunicorn)"]
+    API --> DB[("🍃 MongoDB Atlas<br/>placement_db")]
+```
 
 ---
 
 ## 🛠️ Technology Stack
 
-* **Frontend**: React 18, Vite, Tailwind CSS, React Router DOM, Axios, Lucide React Icons, Recharts Analytics.
-* **Backend**: Python 3.12, Flask, Flask-CORS, PyMongo (MongoDB Atlas), PyJWT, bcrypt, Gunicorn.
-* **Database**: MongoDB Atlas (`placement_db`).
-* **Deployment**: Render (Separate Frontend & Backend Web Services).
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | React 18, Vite, Tailwind CSS, React Router DOM, Axios, Lucide React, Recharts |
+| **Backend** | Python 3.12, Flask, Flask-CORS, PyMongo, PyJWT, bcrypt, Gunicorn |
+| **Database** | MongoDB Atlas (`placement_db`) |
+| **Hosting** | Vercel (frontend), Render (backend) |
 
 ---
 
-## 📁 Directory Structure
+## 📁 Project Structure
 
 ```text
 Cloud Project/
 ├── README.md
 ├── .gitignore
 ├── backend/
-│   ├── app.py                 # Main Flask application & Blueprints
-│   ├── seed.py                # Database seed script for MongoDB Atlas
-│   ├── config.py              # Configuration & Environment loader
-│   ├── db.py                  # PyMongo client manager & Index creator
-│   ├── Procfile               # Production startup command for Render
-│   ├── requirements.txt       # Python dependencies
-│   ├── .env.example           # Backend environment template
+│   ├── app.py                 # Flask app & blueprint registration
+│   ├── seed.py                # Seeds demo data into MongoDB
+│   ├── config.py              # Environment configuration loader
+│   ├── db.py                  # PyMongo client & index creation
+│   ├── Procfile               # Production start command
+│   ├── requirements.txt
+│   ├── .env.example
 │   ├── middleware/
-│   │   └── auth.py            # JWT authentication & Role authorization
+│   │   └── auth.py            # JWT auth & role authorization
 │   ├── utils/
-│   │   ├── eligibility.py     # Automatic eligibility checking engine
-│   │   └── helpers.py         # ObjectId & BSON JSON formatters
+│   │   ├── eligibility.py     # Eligibility checking engine
+│   │   └── helpers.py         # ObjectId / BSON JSON formatters
 │   └── routes/
 │       ├── auth.py
 │       ├── student.py
@@ -86,123 +144,159 @@ Cloud Project/
         ├── index.css
         ├── main.jsx
         ├── App.jsx
-        ├── context/
-        │   ├── AuthContext.jsx
-        │   └── NotificationContext.jsx
-        ├── services/
-        │   └── api.js
-        ├── components/
-        │   └── common/        # Navbar, Sidebar, EligibilityBadge, ApplicationStepper, StatCard
+        ├── context/           # AuthContext, NotificationContext
+        ├── services/          # api.js (Axios instance)
+        ├── components/common/ # Navbar, Sidebar, EligibilityBadge, ApplicationStepper, StatCard
         └── pages/
             ├── LandingPage.jsx
             ├── LoginPage.jsx
             ├── RegisterPage.jsx
-            ├── student/       # Student Dashboard, Profile, Drives, Applications, Interviews
-            ├── admin/         # Admin Analytics, Students, Companies, Drives, Applications
-            └── recruiter/     # Recruiter Dashboard, Company, PostJob, Applicants
+            ├── student/       # Dashboard, Profile, Drives, Applications, Interviews
+            ├── admin/         # Analytics, Students, Companies, Drives, Applications
+            └── recruiter/     # Dashboard, Company, PostJob, Applicants
 ```
 
 ---
 
 ## 🔑 Demo Credentials
 
-| Role | Email | Password | Description |
+Try the [live app](https://frontend-opal-tau-kjcer8fkaw.vercel.app/) with any of these seeded accounts:
+
+| Role | Email | Password | Notes |
 | :--- | :--- | :--- | :--- |
-| **Placement Admin** | `admin@placement.edu` | `Admin@123` | Placement Director (Full Analytics & Company Approval) |
-| **Student 1** | `student@placement.edu` | `Student@123` | Rahul Sharma (CSE, 8.8 CGPA, 0 Backlogs - Eligible) |
-| **Student 2** | `ananya@placement.edu` | `Student@123` | Ananya Verma (IT, 7.9 CGPA, 0 Backlogs) |
-| **Student 3** | `vikram@placement.edu` | `Student@123` | Vikram Singh (ECE, 6.4 CGPA, 1 Backlog - Reduced Eligibility) |
-| **Recruiter** | `recruiter@techcorp.com` | `Recruiter@123` | TechCorp Solutions (Approved Corporate Account) |
+| 🛡️ **Placement Admin** | `admin@placement.edu` | `Admin@123` | Full analytics & company approval |
+| 👨‍🎓 **Student 1** | `student@placement.edu` | `Student@123` | Rahul Sharma · CSE · 8.8 CGPA · 0 backlogs (fully eligible) |
+| 👩‍🎓 **Student 2** | `ananya@placement.edu` | `Student@123` | Ananya Verma · IT · 7.9 CGPA · 0 backlogs |
+| 👨‍🎓 **Student 3** | `vikram@placement.edu` | `Student@123` | Vikram Singh · ECE · 6.4 CGPA · 1 backlog (reduced eligibility) |
+| 🏢 **Recruiter** | `recruiter@techcorp.com` | `Recruiter@123` | TechCorp Solutions (approved account) |
+
+> ⚠️ These are demo accounts for seeded data only. Change or remove them before any real use.
 
 ---
 
 ## ⚙️ Environment Variables
 
-### Backend `.env` (`backend/.env`)
+### Backend: `backend/.env`
+
 ```env
-MONGO_URI=mongodb+srv://hyperlocalaqi_db_user:Test1234@aqiproject.7r8nvxf.mongodb.net/placement_db?retryWrites=true&w=majority
-JWT_SECRET=super_secret_placement_jwt_key_2026_xyz_789
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/placement_db?retryWrites=true&w=majority
+JWT_SECRET=<generate-a-long-random-string>
 PORT=5000
 FRONTEND_URL=http://localhost:5173
 ```
 
-### Frontend `.env` (`frontend/.env`)
+### Frontend: `frontend/.env`
+
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
+
+> 💡 Generate a strong JWT secret with:
+> `python -c "import secrets; print(secrets.token_urlsafe(64))"`
 
 ---
 
 ## 🚀 Local Development Setup
 
-### 1. Backend Setup
-```bash
-# Navigate to backend directory
-cd backend
+### Prerequisites
 
-# Install Python dependencies
+- Python 3.12+
+- Node.js 18+
+- A MongoDB Atlas cluster (see below)
+
+### 1️⃣ Backend
+
+```bash
+cd backend
 pip install -r requirements.txt
 
-# Run seed script to populate demo data in MongoDB Atlas
-python seed.py
+cp .env.example .env      # then fill in your values
 
-# Start Flask local development server
-python app.py
+python seed.py            # populate demo data
+python app.py             # starts at http://localhost:5000
 ```
-The Flask REST API will start at `http://localhost:5000`.
 
-### 2. Frontend Setup
+### 2️⃣ Frontend
+
 ```bash
-# Navigate to frontend directory
 cd frontend
-
-# Install npm packages
 npm install
 
-# Launch Vite development server
-npm run dev
+cp .env.example .env      # set VITE_API_URL
+
+npm run dev               # starts at http://localhost:5173
 ```
-The React web app will start at `http://localhost:5173`.
 
 ---
 
-## 🌐 MongoDB Atlas Setup Instructions
+## 🍃 MongoDB Atlas Setup
 
 1. Create a free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 2. Under **Database Access**, create a user with read/write permissions.
-3. Under **Network Access**, add `0.0.0.0/0` to allow connections from Render.
-4. Copy your SRV connection string: `mongodb+srv://<username>:<password>@cluster.mongodb.net/placement_db?retryWrites=true&w=majority`.
-5. Paste this connection string as the `MONGO_URI` environment variable in both your local `.env` and Render backend environment configuration.
+3. Under **Network Access**, allow your hosting provider's IPs (using `0.0.0.0/0` works for Render but is less strict).
+4. Copy the SRV connection string:
+   `mongodb+srv://<username>:<password>@cluster.mongodb.net/placement_db?retryWrites=true&w=majority`
+5. Set it as `MONGO_URI` in your local `.env` and in your backend host's environment settings.
 
 ---
 
-## 🚀 Render Deployment Instructions
+## 🌐 Deployment
 
-### Service 1: Backend Web Service (Flask API)
-* **Root Directory**: `backend`
-* **Environment**: `Python 3`
-* **Build Command**: `pip install -r requirements.txt`
-* **Start Command**: `gunicorn app:app`
-* **Environment Variables**:
-  * `MONGO_URI`: Your MongoDB Atlas connection URI
-  * `JWT_SECRET`: A secure random secret key
-  * `FRONTEND_URL`: URL of your deployed frontend Render service (e.g. `https://placement-frontend.onrender.com`)
+### Backend: Render Web Service (Flask API)
 
-### Service 2: Frontend Static Site (React + Vite)
-* **Root Directory**: `frontend`
-* **Build Command**: `npm run build`
-* **Publish Directory**: `dist`
-* **Environment Variables**:
-  * `VITE_API_URL`: URL of your deployed backend Render service (e.g. `https://placement-backend.onrender.com/api`)
+| Setting | Value |
+| :--- | :--- |
+| Root Directory | `backend` |
+| Environment | `Python 3` |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `gunicorn app:app` |
+
+**Environment variables:** `MONGO_URI`, `JWT_SECRET`, `FRONTEND_URL` (your deployed frontend URL).
+
+### Frontend: Vercel (or Render Static Site)
+
+| Setting | Value |
+| :--- | :--- |
+| Root Directory | `frontend` |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+
+**Environment variables:** `VITE_API_URL` (your deployed backend URL, ending in `/api`).
 
 ---
 
-## 🔒 Security Best Practices
+## 🔒 Security
 
-* Passwords are strictly hashed using **bcrypt** salt routines.
-* Protected endpoints enforce role authorization middleware (`@jwt_required`, `@role_required`).
-* Strict CORS configuration ensuring frontend and backend communicate securely.
-* MongoDB connection strings and JWT secrets are managed strictly through environment variables.
-#   P l a c e m e n t - M a n a g e m e n t - S y s t e m - 
- 
- 
+- 🔑 Passwords hashed with **bcrypt**
+- 🛂 Protected endpoints use JWT and role-based middleware (`@jwt_required`, `@role_required`)
+- 🌍 Strict CORS limited to the configured frontend origin
+- 🗝️ Database URIs and JWT secrets live in environment variables only, never in the repository
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Email notifications for application and interview updates
+- [ ] Resume upload to cloud storage
+- [ ] Exportable placement reports (PDF / Excel)
+- [ ] Calendar (ICS) sync for interview slots
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m "Add amazing feature"`
+4. Push the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+---
+
+<div align="center">
+
+⭐ If you found this project useful, consider giving it a star!
+
+</div>
