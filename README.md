@@ -3,6 +3,7 @@
 A complete, production-ready, full-stack campus placement application built for colleges and universities. It streamlines the recruitment ecosystem by connecting **Students**, **Placement Officers (Admins)**, and **Corporate Recruiters**.
 
 ---
+## Live URL :  https://frontend-opal-tau-kjcer8fkaw.vercel.app/
 
 ## 🌟 Key Features
 
@@ -202,5 +203,6 @@ The React web app will start at `http://localhost:5173`.
 * Protected endpoints enforce role authorization middleware (`@jwt_required`, `@role_required`).
 * Strict CORS configuration ensuring frontend and backend communicate securely.
 * MongoDB connection strings and JWT secrets are managed strictly through environment variables.
-#   P l a c e m e n t - M a n a g e m e n t - S y s t e m -  
+#   P l a c e m e n t - M a n a g e m e n t - S y s t e m - 
+ 
  
