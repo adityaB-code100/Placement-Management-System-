@@ -4,7 +4,7 @@
 
 **A full-stack campus placement platform connecting Students, Placement Officers, and Corporate Recruiters.**
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_App-2ea44f?style=for-the-badge)](https://frontend-opal-tau-kjcer8fkaw.vercel.app/)
+<a href="https://frontend-opal-tau-kjcer8fkaw.vercel.app/"> <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_App-2ea44f?style=for-the-badge" alt="Live Demo" height="64"> </a>
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)
